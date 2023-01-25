@@ -6,8 +6,16 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body>   <textarea id="evaluatedText" onkeyup="countLetters()"></textarea>
+    <h3 id="letterCount">0</h3>
 	<!-- the entire body must be written by student -->
+	  <script>
+      function countLetters() {
+        var inputText = document.getElementById("evaluatedText").value;
+        var letterCount = inputText.length;
+        document.getElementById("letterCount").innerHTML = letterCount;
+      }
+    </script>
     <script type="text/javascript" src="./script.js">
 </script>
 
